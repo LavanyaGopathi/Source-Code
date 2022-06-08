@@ -1,5 +1,96 @@
-table,
-th,
-td {
-    border: 1px solid black;
+body{
+    background-color: hsla(89, 43%, 51%, 0.3);
+    font-family: "fredoka", "sans-serif";
+}
+
+main {
+    color: rgb(100, 15, 15);
+    font-family: "large";
+}
+
+.content {
+    background-color: rgb(0, 0, 88);
+    color: rgb(241, 241, 255);
+    font-family: "arial", "helvatice", "sans-serif";
+}
+
+div p {
+    font-weight: 200;
+    color: rgb(216, 182, 125);
+}
+
+input {
+    color: chartreuse;
+}
+
+.container p {
+    font-size: "small";
+    font-family: "arial", "helvatice", "sans-serif";
+    color: red;
+    font-weight: "700";
+    
+}
+.container{background-color:orange;
+    border-style: solid;
+    border-color: green;
+}
+#margin{ margin:1% 10% 1% 20%;
+    margin:red;
+}
+
+div.container {
+    font-size: "small";
+    font-family: "arial", "helvatice", "sans-serif";
+    color: red;
+    font-weight: "700";
+}
+h1{
+    text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+
+}
+
+input {
+    color: chartreuse
+}
+
+.btn,
+button {
+    background-color: pink;
+    color: red;
+}
+
+.btn:hover,
+input:hover,
+button:hover {
+    background-color: pink;
+    color: red;
+}
+
+div.content::first-letter {
+    color: rgb(199, 117, 9);
+    font-weight: bolder;
+}
+
+article::before {
+    content: "OMG LOOK AT THIS";
+    color: #889808;
+}
+
+a[target="_blank"] {
+    background-color: green;
+}
+
+label[for="first"] {
+    color: #f4a;
+    background-color: light pink;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
 }
