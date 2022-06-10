@@ -1,0 +1,51 @@
+body {
+    background-color: plum;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: saddlebrown;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+h1 {
+    color: green;
+    position: sticky;
+}
+
+navbar .a {
+    background-image: url(../images/bush-o-graphy-UJiIuat1hZ0-unsplash.jpg);
+    size: cover;
+}
+
+.products {
+    width: 75px;
+    height: 250px;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+#home {
+    z-index: 2;
+    position: fixed;
+    margin: 30% 0% 0% 30%;
+    margin-top: auto;
+}
