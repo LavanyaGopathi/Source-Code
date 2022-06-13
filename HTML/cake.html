@@ -8,21 +8,25 @@
         --pink: #ff80bf;
         --greeen: #4dff88;
     }
-    /*body {
+    
+    body {
         background-color: var(--pink);
         animation-name: colors;
         animation-duration: 10s;
         animation: iteration count 1;
-    }*/
-    /*@keyframes simple {
+        animation-direction: reverse;
+    }
+    
+    @keyframes simple {
         from {
             background-image: url(../images/panipuri_gupchup_indian_food.jpg) width="300px" height="400px";
         }
         to {
             background-image: url("../images/pancakes-2020863_640.jpg") width="300px" height="400px";
         }
-    }*/
-    /*@keyframes colors {
+    }
+    
+    @keyframes colors {
         0% {
             color: red;
             background-color: lightpink;
@@ -44,32 +48,42 @@
             color: #ff3333;
             background-color: lightgreen;
         }
-    }*/
+    }
     
     #transition {
         font-size: 16px;
         color: rgba(18, 49, 187, 0.437);
-        transition: font-size 4s, color 3s;
     }
     
-    #transition:h1 {
-        width: 100px;
+    h1 {
+        width: 150px;
         height: 25px;
         background-color: orange;
         font-size: 36px;
-        transition: background-color 4s, width 1s;
-        transition-timing-function: steps(4);
+        transition: font-size 4s, color 3s, transform 2s;
+        transition-timing-function: linear;
+    }
+    
+    h1:hover {
+        width: 150px;
+        transform: rotate(360deg);
     }
     
     body {
         color: yellow;
         background-color: aqua;
     }
-    /*.image {
-        background-image: url("../images/simple-vanilla-cake.png") width="300px" height="400px" repeating-linear-gradient(5);
-        animation-name: simple;
-        animation: duration 5s;
-        animation: iteration count 1px;
+    /*#image {
+        width: "500px";
+        height: "400px";
+        transition: width 2s, height 4s, transform 2s;
+        transition-timing-function: steps(4);
+    }
+    
+    #image:hover {
+        width: 300px;
+        height: 400px;
+        transform: rotate(360deg);
     }*/
 </style>
 
@@ -82,7 +96,7 @@
             A simple vanilla cake recipe provides you with a delicate, moist and flavourful cake that can serve as a base for something more elaborate, please a host of children clamouring for something sweet or provide a simple sugar fix. This is a cake recipe that
             works splendidly for birthdays, special occasions, or just that celebrated English ceremony, afternoon tea
         </p>
-        <img src="../images/simple-vanilla-cake.png" alt="basic cake" width="300px" height="400px" class="image">
+        <img src="../images/simple-vanilla-cake.png" alt="basic cake" width="300px" height="400px" class="image" ;>
     </div>
     <div>
         <h3 style="color:blue">INGREDIENTS</h3>
