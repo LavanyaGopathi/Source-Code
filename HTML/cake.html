@@ -58,6 +58,8 @@
     h1 {
         width: 150px;
         height: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
         background-color: orange;
         font-size: 36px;
         transition: font-size 4s, color 3s, transform 2s;
@@ -73,18 +75,17 @@
         color: yellow;
         background-color: aqua;
     }
-    /*#image {
+    
+    .image {
         width: "500px";
         height: "400px";
         transition: width 2s, height 4s, transform 2s;
-        transition-timing-function: steps(4);
     }
     
-    #image:hover {
-        width: 300px;
-        height: 400px;
-        transform: rotate(360deg);
-    }*/
+    image:hover {
+        transform: scale(2, 2);
+        margin-left: 20%;
+    }
 </style>
 
 <body>
@@ -96,7 +97,11 @@
             A simple vanilla cake recipe provides you with a delicate, moist and flavourful cake that can serve as a base for something more elaborate, please a host of children clamouring for something sweet or provide a simple sugar fix. This is a cake recipe that
             works splendidly for birthdays, special occasions, or just that celebrated English ceremony, afternoon tea
         </p>
-        <img src="../images/simple-vanilla-cake.png" alt="basic cake" width="300px" height="400px" class="image" ;>
+        <div class="image">
+            <img src="../images/simple-vanilla-cake.png" alt="basic cake" width="300px" height="400px" ;>
+
+        </div>
+
     </div>
     <div>
         <h3 style="color:blue">INGREDIENTS</h3>

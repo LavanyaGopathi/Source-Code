@@ -1,0 +1,62 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 20px;
+    gap: 5%;
+    size: cover;
+    size-adjust: auto;
+    justify-content: space-evenly;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: crimson;
+    text-align: center;
+    font-style: bold;
+}
+
+.products {
+    width: 75px;
+    height: 15px;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: saddlebrown;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: top;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+body {
+    background-color: gold;
+    overflow-x: auto;
+}
+
+p {
+    color: #2196F3;
+}
