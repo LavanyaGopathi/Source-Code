@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: lightgreen;
+            font-family: "nunito", sans-serif;
+        }
+        
+        .navigation {
+            background-color: aqua;
+            margin-left: auto;
+        }
+        
+        .navigation h1 {
+            color: red;
+            text-align: center;
+            font-family: cursive;
+            margin: 15px;
+        }
+        
+        .navigation a {
+            margin: 6%;
+            border-radius: 5%;
+        }
+        
+        .navigation nav {
+            margin: 3% 0% 2%;
+        }
+        
+        #location {
+            display: inline-block;
+        }
+        
+        #times {
+            display: inline-block;
+            background: url(images/pexels-cottonbro-5875696.jpg);
+            height: 50%;
+            width: 50%;
+            margin-left: 1.5%;
+            float: right;
+            text-align: center;
+        }
+        
+        #times h3 {
+            margin: 1% 5%;
+            font-size: 30px;
+        }
+        
+        .light-shadow {
+            background-color: chocolate;
+        }
+        
+        #times-text {
+            margin: bottom 23%;
+        }
+        
+        grid-container {
+            display: block;
+            grid-template-areas: 'header header header header' 'hero hero hero hero' 'map map map map' 'menu menu menu menu' 'footer footer footer footer';
+            gap: 1% 1%;
+            grid-template-columns: 5% 90% 5%;
+        }
+        
+        .item1 {
+            grid-area: header;
+            background-color: darkorange;
+            z-index: 3;
+        }
+        
+        .item2 {
+            grid-area: hero;
+            background-color: darkorange;
+        }
+        
+        .item3 {
+            grid-area: map;
+            background-color: darkorange;
+        }
+        
+        .item4 {
+            grid-area: menu;
+        }
+        
+        .item5 {
+            grid-area: footer;
+            background-color: burlywood;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        .flex-item {
+            flex-grow: 1;
+        }
+        
+        .flex-item img {
+            width: 250px;
+        }
+        
+        #links {
+            margin: 2%;
+            float: right;
+            gap: 25%;
+        }
+        
+        #About Us {
+            display: inline-block;
+            margin: 2%;
+        }
+        
+        #Sastainability {
+            display: inline-block;
+            margin: 2%;
+        }
+        
+        #Careers {
+            display: inline-block;
+            margin: 2%;
+        }
+        
+        #Customer Service And Help {
+            display: inline-block;
+            margin: 2%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample web site</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheets" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/e4cc3a7ee2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="item1">
+            <div class="navigation">
+                <h1>Mango Fruits</h1>
+                <nav>
+                    <a href="#">Store Locations</a>
+                    <a href="#">Home</a>
+                    <a href="#">Prices</a>
+                    <a href="#">Types OF Mango Products</a>
+                    <a href="#">Login</a>
+                </nav>
+            </div>
+        </header>
+        <div class="item2">
+            <img src="images/mangos.jpg" alt="mangos " width="415px " height="500px ">
+            <img src="images/mango business.jpg" alt="mangos " width="415px " height="500px ">
+            <img src="images/mango trees.jpg" alt="mangos " width="415px " height="500px ">
+        </div>
+        <div>
+            <div id="location" class="item3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d367045.32821146544!2d-0.07394144262179235!3d51.60256940347662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smangoes%20stores!5e0!3m2!1sen!2suk!4v1655325740985!5m2!1sen!2suk
+                " width="600 " height="450 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>" </div>
+            <div id="times" class="light-shadow">
+                <h3>Openings Timings</h3>
+                <p>Monday: 9:00-18:00</p>
+                <p>Tueday: 9:00-18:00</p>
+                <p>Wednesday: 9:00-18:00</p>
+                <p>Thursday: 9:00-18:00</p>
+                <p>Friday: 9:00-18:00</p>
+                <p>Saturday: 10:00-17:00</p>
+                <p>Sunday: 10:30-16:30</p>
+
+            </div>
+
+        </div>
+        <div class="item4">
+            <div class="flex-container">
+                <div class="flex-item"><img src="../images/cut mango.jpg" alt="1"> Cut Mango</div>
+                <div class="flex-item"><img src="../images/mango juice.jpg" alt="3">Mango Juice</div>
+                <div class="flex-item"><img src="../images/mango pickle.jpg" alt="4">Mango Pickle fish</div>
+                <div class="flex-item"><img src="../images/mango lassi.jpg" alt="2">Mango Lassi</div>
+                <div class="flex-item"><img src="../images/Mango slice.jpg" alt="6">Mango Jam</div>
+            </div>
+
+        </div>
+
+        <footer class="item5">
+            <div>
+                <div id="About Us">
+                    <h5><a href="#">About Us </a></h5>
+                </div>
+                <div id="Sastainability">
+                    <h5><a href="#">Sastainability </a></h5>
+                </div>
+                <div id="Careers">
+                    <h5><a href="#">About Us </a></h5>
+                </div>
+                <div id="Customer Service And Help">
+                    <h5><a href="#">About Us </a></h5>
+                </div>
+                <div id="links">
+
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+</body>
+
+</html>
