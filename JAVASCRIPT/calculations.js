@@ -1,14 +1,28 @@
-/*function SumUp(valueOne, valueTwo) {
-    return Number(valueOne) + Number(valueTwo);
+let name1 = document.getElementById("first").value;
+let name2 = document.getElementById("book").value;
+var fullString = '${name1} is learning about javaScript and ${name2} is favourite.';
+console.log(fullString);
 
-}
-const operations = document.getElementById("operations");
+
+
+
+
+
+//Basic Calcultor:-
+function SumUp(valueOne, valueTwo) {
+    return Number(valueOne) + Number(valueTwo);
+};
+
 const NumberOne = document.getElementById("NumberOne");
 const NumberTwo = document.getElementById("NumberTwo");
 const Result = document.getElementById("Result");
-console.log(NumberOne.value);
-console.log(NumberTwo.value);*/
 
+function calculate() {
+    var sum = SumUp(NumberOne.value, NumberTwo.value);
+    Result.value = sum.toString();
+};
+
+//multi purpose calculatoe:-
 let display = document.getElementById("display");
 
 let buttons = Array.from(document.getElementsByClassName("button"));
