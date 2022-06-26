@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 
 <head>
-    <script type="text/javascript">
-        function myFunction() {
-            alert("Hello! I am an alert box!");
+    <title>Java Script tutorial</title>
+    <style>
+        #main {
+            background-color: aqua;
+            color: brown;
         }
-    </script>
+        h1 {
+            
+            text-align:center;
+            color:brown;
+        }
+    </style>
 </head>
 
-<body onload="myFunction()">
-    <h1 style="color:red;"> Welcome TO The HTML</h1>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li id="hh">Home</li>
+            <li>About Me</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+        </ul>
+
+    </div>
+    <h1 style="color:red;" id="demo"> Welcome TO The HTML</h1>
     <h2 style="color:blue;"> Welcome To The JustIT</h2>
     <img src="../images/lin-zhi-7151302_640.jpg" alt="lin">
+
+    <h2></h2>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt atque veniam deleniti asperiores, repellendus iste ipsam consequuntur. Quidem excepturi similique ea debitis, maiores, illo maxime minima eligendi saepe expedita rerum? Ex quidem ad
+        voluptate expedita inventore aspernatur error id sed? Enim accusantium perspiciatis accusamus sint ea, ipsa magnam eius commodi, rem, atque vero recusandae sapiente et. At dolorem fugiat ex.</p>
+
+    <button type="button" id="Btn" onclick="document.getElementById('para').style.font-size='35px'">Click me </button>
+    <div>
+        <h5> Bulb </h5>
+        
+        <img src="../images/Bulb.jpg" alt="Bulb" width="25%" height="25%" id="imgBulb">
+        <button type="button" onclick="switchOn();">On / Off</button>
+    </div>
+
+
+
+    <script type="text/javascript" src="../JAVASCRIPT/prc2.js"></script>
+
 </body>
 
 </html>

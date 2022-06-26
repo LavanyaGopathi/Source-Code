@@ -30,24 +30,30 @@
         </form>
 
     </div>
-    <div class="flex-container">
+    <div>
+        <button onclick="ageCheck()" ;>Age check</button>
+        <p id="fruits"></p>
         <h2>Basic Calculator</h2>
-        <input type="text" id="numberOne" ;/>
-        <label for="operations" style="display:inline; color: rgb(144, 40, 151);">Operations</label>
-        <select id="operations" name="operations">
-            <option value="+" id="add">+</option>
+        <form class="container calculator">
+            <input type="text" id="numberOne" ;/>
+            <label for="operations" style="display:inline; color: rgb(144, 40, 151);">Operations</label>
+            <input list="Operations" type="text" id="operations" name="operations" />
+            <datalist id="operation" name="operation">
+            <option value="tim" id="add">+</option>
             <option value="-" id="minus">-</option>
-            <option value="*" id="multiplication">*</option>
+            <option value="*" id="multi">*</option>
             <option value="/" id="division">/</option>
-        </select>
+        </datalist>
 
-        <input type="text" id="numberTwo" />
+            <input type="text" id="numberTwo" />
 
-        <input type="Button" id="submit" value="SumUp" onclick="calculator(operations)" />
+            <input type="Button" id="submit" value="SumUp" onclick="calculate(operator)" />
 
-        <input type="text" id="result" disabled/>
+            <input type="text" id="result" disabled/>
 
-        <input type="reset" id="reset" name="reset" />
+            <input type="reset" id="reset" name="reset" />
+
+        </form>
     </div>
 
     <h2>Modified Calculator</h2>
