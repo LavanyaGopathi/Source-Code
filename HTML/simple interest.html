@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+    <!-- jquery is all ways placed in top of the java script-->
+    <style>
+        .class {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: bisque;
+            color: crimson;
+        }
+        
+        h2 {
+            text-align: center;
+            background-color: aquamarine;
+            color: crimson;
+            font-style: italic;
+        }
+        
+        #Venue div {
+            size: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Simple Interest Calculator</h2>
+        <div class="A">
+            <label for="Amount">Enter the Amount:</label>
+            <input type="Number" name="Amount" id="Amount">
+        </div>
+
+        <div class="A">
+            <label for="Time">Time</label>
+            <input type="Number" name="Time" id="Time" placeholder="Enter the Time:">
+        </div>
+
+        <div class="A">
+            <label for="Rate">Rate</label>
+            <input type="Number" name="Rate" id="Rate" placeholder="Enter the Rate:">
+        </div>
+        <div class="A">
+            <button type="button" onclick="calculate()">Calculate</button>
+        </div>
+        <div id="Result"></div>
+        <div id="total"></div>
+    </div>
+    <article>
+        <p id="text" onclick="thisFunction(this.id)">This is an Article</p>
+    </article>
+    <!--                          task1                          -->
+    <div>
+        <h3> Pre Bookings for Party </h3>
+    </div>
+    <div>
+        <h1 id="L">Welcome to JQuery</h1>
+
+        <button id="Venue">Button</button>
+
+    </div>
+
+    <div style="background-color:skyblue;">
+        <p id="g">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nostrum excepturi. Ea a nobis maiores vitae, consectetur iure illo ut repellat iste? Nisi explicabo, sit qui adipisci vel eveniet fuga?
+
+        </p>
+
+        <button id="h">Button</button>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../JAVASCRIPT/simple interest.js"></script>
+
+</body>
+
+</html>
