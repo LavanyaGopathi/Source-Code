@@ -125,7 +125,44 @@ $('#h').click(function() {
     })
     //ex:-7
 $('#h').css({
-    'backgroundColor': "#33ffee",
-    'color': '#ffff',
-    'border': 'solid bloue 3px'
-})
+        'backgroundColor': "#33ffee",
+        'color': '#ffff',
+        'border': 'solid bloue 3px'
+    })
+    //you tube exercise:-
+    //$('#two,#two,#two,#two').hide(1000);
+    //$('#two1,#two2').css('color', 'red');
+    //$("*").css('color', 'red');
+    //$('h5').css("color", 'blue');
+    //$('[id]').css('color', 'blue');
+    //$('a').css('color', 'purple');
+    //$('a[target = "_blank"]').css('color', 'blue');
+    //$('a[target != "_blank"]').css('color', 'blue');
+    //Event Concepts:-1
+    // $('h5').click(function() {
+    //     $('p').hide(3000);
+    // });
+    // //2:-double click:-
+    // $('h5').click(function() {
+    //     $('p').hide(3000);
+    //     $('h5').css('color', 'red')
+    // });
+    // //3:-this,mouseover,mouseleave
+    // $('h5').mouseover(function() {
+    //     $('p').hide(3000);
+    //     $('this').css('color', 'pink')
+    // });
+    // $('h5').mouseleave(function() {
+    //     $('p').show(3000);
+    //     $('this').css('color', 'brown')
+    // });
+    // //4:-hover
+$('#three').hover(
+    function() {
+        $('#two,#two,#two,#two').css('color', 'yellow');
+    },
+
+    function() {
+        $('#two,#two,#two,#two').css('color', 'blue');
+    }
+);
